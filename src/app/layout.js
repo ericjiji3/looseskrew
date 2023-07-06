@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import Header from './components/Header'
+import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <video className="bg-video" autoPlay={true} loop={true} playsInline muted width="100%">
+          <source src={require('../../public/bg-video.mp4')} type="video/mp4"></source>
+        </video>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }
