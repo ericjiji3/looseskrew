@@ -2,18 +2,31 @@
 const nextConfig = {
     experimental: {
         serverActions: true,
-      }
+      },
+      images: {
+        remotePatterns: [
+        {
+            protocol: 'https',
+            hostname: 'i.ytimg.com',
+            port: '',
+            pathname: '/vi/**',
+        },
+        ],
+    }
       
 }
-supabase: {
-    client: {
-        auth: {
-            persistSession: false //or true
-        }
-    }
-  }
 module.exports = nextConfig
 const withVideos = require('next-videos')
 
-module.exports = withVideos()
-
+module.exports = withVideos({
+    images: {
+        remotePatterns: [
+        {
+            protocol: 'https',
+            hostname: 'i.ytimg.com',
+            port: '',
+            pathname: '/vi/**',
+        },
+        ],
+    }
+})
