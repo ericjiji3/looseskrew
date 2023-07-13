@@ -22,8 +22,8 @@ export default function Videos(props){
                 :
                 <div className={styles.fallbackVideo}>
                     <h4 className={styles.videoTitle}>{props.videoTitle}</h4>
-                    <Image className={styles.playIcon} src={playIcon} width={50} height={50}/>
-                    {props.fallback ? <Image className={styles.thumbnail} src={props.videoThumbnail} width={480} height={360}/> : <Image className={styles.thumbnail} src={fallbackThumbnail} width={480} height={360}/>}
+                    <Image alt="oops" className={styles.playIcon} src={playIcon} width={50} height={50}/>
+                    {props.fallback ? <Image alt="oops" className={styles.thumbnail} src={props.videoThumbnail} width={480} height={360}/> : <Image alt="oops" className={styles.thumbnail} src={fallbackThumbnail} width={480} height={360}/>}
                 </div>
                 
             }

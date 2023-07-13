@@ -18,7 +18,7 @@ export default function Videos({ videos }){
                     }
                     
                     return(
-                        <Video videoId={video.snippet.resourceId.videoId} videoTitle={video.snippet.title} videoThumbnail={video.snippet.thumbnails.high.url} fallback={video.snippet.thumbnails.standard != undefined ? true : false}/>
+                        <Video key={i} videoId={video.snippet.resourceId.videoId} videoTitle={video.snippet.title} videoThumbnail={video.snippet.thumbnails.high.url} fallback={video.snippet.thumbnails.standard != undefined ? true : false}/>
                     )
                 })
             } 
