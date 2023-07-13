@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <video className="bg-video" autoPlay={true} loop={true} playsInline muted width="100%">
-          <source src={require('../../public/bg-video.mp4')} type="video/mp4"></source>
-        </video>
+        <video className="bg-video" src={require('../../public/bg-video.mp4')} autoPlay={true} loop={true} playsInline muted width="100%"/>
         <Header/>
         {children}
         <Footer/>
