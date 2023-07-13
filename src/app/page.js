@@ -11,7 +11,7 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     <video controls width={700} height={400} src={require('../../public/skrewface-commerical.mp4')} type='video/mp4' preload="metadata"/>
+     <video controls width={700} height={400} src={require('/videos/skrewface-commerical.mp4')} type='video/mp4' preload="metadata"/>
     </main>
   )
 }
