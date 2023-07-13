@@ -24,7 +24,7 @@ export default function Footer(){
     }
     return (
         <div className="footer-container">
-                <label for="email">{errMessage}</label>
+                <label htmlFor="email">{errMessage}</label>
                 <input type="text" id="email" name="email" value={email} onChange={handleChange}></input>
                 <button onClick={addEmail}>Submit</button>
         </div>

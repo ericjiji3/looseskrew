@@ -9,7 +9,6 @@ export default function Videos(props){
     const [showYoutube, setShowYoutube] = useState(false);
 
     const handleClick = event =>{
-        console.log(event.currentTarget.id);
         setShowYoutube(true);
     }
  
