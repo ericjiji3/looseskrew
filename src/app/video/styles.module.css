@@ -1,0 +1,30 @@
+.videosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.videosContainer .videoContainer{
+    position: relative;
+    margin: 50px 25px;
+    box-shadow: rgba(245, 245, 245, 0.19) 10px 10px 5px;
+}
+.videosContainer .youtubeVideo{
+    position: relative;
+}
+.videosContainer .fallbackVideo{
+    position: relative;
+}
+.videosContainer .fallbackVideo .videoTitle{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.videosContainer .fallbackVideo .playIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.videosContainer .fallbackVideo .thumbnail{
+    
+}
