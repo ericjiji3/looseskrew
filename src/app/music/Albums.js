@@ -15,6 +15,7 @@ export default function Album({ albumsData }){
                                     src={album.images[1].url}
                                     width={album.images[1].width}
                                     height={album.images[1].height}
+                                    alt="oops"
                                 />
                                 <span>{album.name}</span>
                             </a>
