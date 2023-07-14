@@ -7,6 +7,31 @@ body {
   position: relative;
   color: #ffffff;
 }
+body .intro-container{
+  opacity: 1;
+  position: fixed;
+  Z-index: 1;
+}
+body .intro-container.fade{
+  opacity: 0;
+  transition: 1400ms all ease-in;
+}
+body .intro-container.fade.none{
+  display: none;
+}
+body .fadeIn{
+  opacity: 0;
+  animation: 5s fadingIn ease-in forwards;
+  animation-delay: 2s;
+}
+@keyframes fadingIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 body .bg-video{
   position: fixed;
   Z-index: -1;
