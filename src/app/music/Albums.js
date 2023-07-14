@@ -5,7 +5,7 @@ export default function Album({ albumsData }){
     return(
         <div className={styles.albumsContainer}>
             {
-                albumsData.items.map((album, index) =>{
+                albumsData.items?.map((album, index) =>{
                     
                     if(album != undefined){
                         return(
