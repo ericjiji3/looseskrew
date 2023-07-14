@@ -1,0 +1,16 @@
+.albumsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.albumsContainer .albumContainer{
+    margin: 50px 25px;
+}
+.albumsContainer .albumContainer .albumLink{
+    display: flex;
+    flex-direction: column;
+}
+.albumsContainer .albumContainer .albumLink span{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+}

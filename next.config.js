@@ -28,6 +28,12 @@ module.exports = {
             port: '',
             pathname: '/vi/**',
         },
+        {
+            protocol: 'https',
+            hostname: 'i.scdn.co',
+            port: '',
+            pathname: '/image/**',
+        },
         ],
     }
 }
