@@ -6,28 +6,31 @@ import BackAlbum from '../../public/album-back.jpeg'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {useState, useEffect} from 'react';
+import localFont from 'next/font/local'
 
+const sectar = localFont({src: './fonts/Sectar.otf'})
 export default function Home() {
   const [video, setVideo] = useState(null);
   useEffect(()=>{
     setVideo(
     <ReactPlayer
-      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
+      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4#t=1"
       width={700}
       height={400}
       controls={true}
+      className={styles.videoContainer}
+      
      />
     )
   }, [])
 
   return (
     <main className={styles.homeContainer}>
-     HOMEHOMEHOME
+      <h2 className={`${sectar.className}`}>ALBUM OUT NOW</h2>
      <div className={styles.albumContainer}>
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     {/* <video controls width={700} height={400} src={require('/bg-video.mp4')} type='video/mp4' preload="metadata"/> */}
      {video}
     </main>
   )

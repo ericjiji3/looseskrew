@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0;
+}
+.header .logo{
+    margin-bottom: 15px;
+}
+.header .logo .header-text{
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+}
+.header .nav-container{
+    display: flex;
+    justify-content: center;
+}
+.header .nav-container a{
+    margin: 0 25px 25px;
+    text-decoration: none;
+    color: #ffffff;
+}

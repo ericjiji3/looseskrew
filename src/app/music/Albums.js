@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './styles.module.css';
+import localFont from 'next/font/local'
 
+const sectar = localFont({src: '../fonts/Sectar.otf'})
 export default function Album({ albumsData }){
     return(
         <div className={styles.albumsContainer}>
@@ -19,7 +21,7 @@ export default function Album({ albumsData }){
                                         height={album.images[1].height}
                                         alt="oops"
                                     />
-                                    <span>{album.name}</span>
+                                    <span className={sectar.className}>{album.name}</span>
                                 </a>
                             </div>
                         )
