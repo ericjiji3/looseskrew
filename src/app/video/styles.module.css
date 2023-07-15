@@ -25,6 +25,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.videosContainer .fallbackVideo .thumbnail{
-    
+@media(max-width: 500px){
+    .videosContainer .videoContainer{
+        margin: 25px 0;
+    }
+    .videosContainer .videoContainer .youtubeVideo{
+        position: relative;
+        width: 400px!important;
+        height: 300px!important;
+    }
+    .videosContainer .videoContainer .youtubeVideo iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .videosContainer .fallbackVideo .videoTitle{
+        position: absolute;
+        top: -15px;
+        left: 10px;
+    }
+    .videosContainer .fallbackVideo .thumbnail{
+        width: 400px!important;
+        height: 300px!important;
+    }
 }

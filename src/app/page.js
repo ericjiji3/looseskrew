@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(()=>{
     setVideo(
     <ReactPlayer
-      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4#t=1"
+      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
       width={700}
       height={400}
       controls={true}

@@ -15,3 +15,23 @@
   border: 3px solid rgba(245, 245, 245, 0.5);
   box-shadow: rgba(245, 245, 245, 0.19) 10px 10px 5px;
 }
+@media(max-width: 800px){
+  .homeContainer .albumContainer img{
+    width: 200px!important;
+    height: 200px!important;
+  }
+  .homeContainer .videoContainer{
+    width: 500px!important;
+    height: 280px!important;
+  }
+}
+@media(max-width: 600px){
+  .homeContainer .albumContainer img{
+    width: 150px!important;
+    height: 150px!important;
+  }
+  .homeContainer .videoContainer{
+    width: 350px!important;
+    height: 200px!important;
+  }
+}

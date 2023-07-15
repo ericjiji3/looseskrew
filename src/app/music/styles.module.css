@@ -1,6 +1,7 @@
 .albumsContainer{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .albumsContainer .albumContainer{
     margin: 50px 25px;
@@ -9,8 +10,20 @@
     display: flex;
     flex-direction: column;
 }
+.albumsContainer .albumContainer .albumLink img{
+    border: 1px solid #ffffff;
+}
 .albumsContainer .albumContainer .albumLink span{
     text-align: center;
     margin-top: 10px;
     color: #ffffff;
+}
+.albumsContainer .albumContainer .albumLink:hover span{
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+@media(max-width: 500px){
+    .albumsContainer .albumContainer{
+        margin: 25px 10px;
+    }
 }

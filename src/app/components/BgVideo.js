@@ -19,7 +19,7 @@ export default function BgVideo(){
     
   }, [])
     return(
-        <div>
+        <div className="bgVideo">
             {video}
         </div>
     )

@@ -21,9 +21,28 @@ body .intro-container.fade.none{
 }
 body .fadeIn{
   opacity: 0;
-  animation: 5s fadingIn ease-in forwards;
-  animation-delay: 2s;
+  animation: 1.5s fadingIn ease-in forwards;
+  margin-bottom: 15px;
 }
+body .fadeIn .bg-video::before{
+  content: '';
+  background-color: rgb(14 14 14 / 75%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .bg-video{
+  position: fixed;
+  Z-index: -1;
+}
+body .bg-video video{
+  width: 100vw!important;
+  height: 100vh!important;
+  object-fit: cover;
+}
+
+
+
 @keyframes fadingIn{
   0%{
     opacity: 0;
@@ -31,8 +50,4 @@ body .fadeIn{
   100%{
     opacity: 1;
   }
-}
-body .bg-video{
-  position: fixed;
-  Z-index: -1;
 }

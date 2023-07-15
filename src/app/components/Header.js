@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import localFont from 'next/font/local'
-import styes from './header.css'
+import styles from './header.css'
 const helpMe = localFont({src: '../fonts/HelpMe.ttf'})
 const sectar = localFont({src: '../fonts/Sectar.otf'})
 export default function Header(){
