@@ -1,28 +1,27 @@
-"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import FrontAlbum from '../../public/album-front.jpeg'
 import BackAlbum from '../../public/album-back.jpeg'
 import React from 'react'
 import ReactPlayer from 'react-player'
-import {useState, useEffect} from 'react';
+// import {useState, useEffect} from 'react';
 import localFont from 'next/font/local'
 
 const sectar = localFont({src: './fonts/Sectar.otf'})
 export default function Home() {
-  const [video, setVideo] = useState(null);
-  useEffect(()=>{
-    setVideo(
-    <ReactPlayer
-      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
-      width={700}
-      height={400}
-      controls={true}
-      className={styles.videoContainer}
+  // const [video, setVideo] = useState(null);
+  // useEffect(()=>{
+  //   setVideo(
+  //   <ReactPlayer
+  //     url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
+  //     width={700}
+  //     height={400}
+  //     controls={true}
+  //     className={styles.videoContainer}
       
-     />
-    )
-  }, [])
+  //    />
+  //   )
+  // }, [])
 
   return (
     <main className={styles.homeContainer}>
@@ -31,7 +30,14 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     {video}
+     <ReactPlayer
+      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
+      width={700}
+      height={400}
+      controls={true}
+      className={styles.videoContainer}
+      
+     />
     </main>
   )
 }

@@ -1,4 +1,3 @@
-'use client'
 import localFont from 'next/font/local'
 import styles from './styles.module.css'
 
