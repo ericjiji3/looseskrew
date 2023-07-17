@@ -15,7 +15,7 @@ export default function IntroVideo({finishVid}){
       muted={true}
       controls={false}
       playing={true}
-      playsInline={true}
+      playsinline={true}
       loop={false}
 
     />);

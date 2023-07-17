@@ -13,7 +13,7 @@ export default function BgVideo(){
       muted={true}
       controls={false}
       playing={true}
-      playsInline={true}
+      playsinline={true}
 
     />);
     
