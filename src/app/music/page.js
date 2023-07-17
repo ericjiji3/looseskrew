@@ -1,6 +1,6 @@
 import Albums from './Albums.js';
 
-const getAccessToken = async () => {
+async function getAccessToken() {
     const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
     console.log('gettinga ccess token')
     const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -21,7 +21,7 @@ const getAccessToken = async () => {
   };
 
 
-  export const topTracks = async () => {
+  async function topTracks() {
     const { access_token } = await getAccessToken();
     console.log('huh');
     const response = await fetch("https://api.spotify.com/v1/artists/6xFrZbce9KH5APjBe4QVNa/albums?include_groups=album&limit=50", {
