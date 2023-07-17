@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
 import FrontAlbum from '../../public/album-front.jpeg'
@@ -7,7 +8,7 @@ import ReactPlayer from 'react-player'
 // import {useState, useEffect} from 'react';
 import localFont from 'next/font/local'
 
-const sectar = localFont({src: './fonts/Sectar.otf'})
+// const sectar = localFont({src: './fonts/Sectar.otf'})
 export default function Home() {
   // const [video, setVideo] = useState(null);
   // useEffect(()=>{
@@ -25,7 +26,7 @@ export default function Home() {
 
   return (
     <main className={styles.homeContainer}>
-      <h2 className={`${sectar.className}`}>ALBUM OUT NOW</h2>
+      <h2 className={`ffsfs`}>ALBUM OUT NOW</h2>
      <div className={styles.albumContainer}>
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>

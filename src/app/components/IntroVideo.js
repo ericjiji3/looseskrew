@@ -30,7 +30,7 @@ export default function IntroVideo({finishVid}){
     return ()=>{
         clearTimeout(fadeOut, hide)
     }
-  }, [])
+  }, [finishVid])
     return(
         <div className={`intro-container ${fadeVid ? "fade" : ""} ${noVid ? "none" : ""}`}>
             {video}
