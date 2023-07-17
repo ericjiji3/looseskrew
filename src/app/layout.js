@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import BgVideo from './components/BgVideo'
-import IntroVideo from './components/IntroVideo'
 import {usePathname} from 'next/navigation'
 import {useState, useEffect} from 'react'
 
