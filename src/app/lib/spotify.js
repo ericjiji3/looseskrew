@@ -26,7 +26,11 @@ const getAccessToken = async () => {
       headers: {
         Authorization: `Bearer ${access_token}`,
       },
-    });
+    },
+    { next: { 
+      revalidate: 86400 
+    } 
+  });
 
     return response.json();
   };
