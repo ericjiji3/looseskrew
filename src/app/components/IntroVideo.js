@@ -2,6 +2,7 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {useState, useEffect} from 'react';
+import Video from './Video.js';
 
 export default function IntroVideo({finishVid}){
     const [video, setVideo] =useState(null);
