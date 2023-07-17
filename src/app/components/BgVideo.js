@@ -13,8 +13,8 @@ export default function BgVideo(){
       muted={true}
       controls={false}
       playing={true}
-      width="500"
-      height="500"
+      playsInline={true}
+
     />);
     
   }, [])

@@ -15,9 +15,9 @@ export default function IntroVideo({finishVid}){
       muted={true}
       controls={false}
       playing={true}
+      playsInline={true}
       loop={false}
-      width="500"
-      height="500"
+
     />);
     const fadeOut = setTimeout(()=>{
         finishVid()
