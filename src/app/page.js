@@ -5,6 +5,7 @@ import FrontAlbum from '../../public/album-front.jpeg'
 import BackAlbum from '../../public/album-back.jpeg'
 import React from 'react'
 import ReactPlayer from 'react-player'
+import {CldVideoPlayer} from "next-cloudinary";
 import {useState, useEffect} from 'react';
 import localFont from 'next/font/local'
 
@@ -31,9 +32,14 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     <video className={styles.videoContainer} src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" width="700" height="400" controls>
+     <video className={styles.videoContainer} width="700" height="400" controls>
       <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
      </video>
+     <CldVideoPlayer
+      width="700"
+      height="400"
+      src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
+      />
     </main>
   )
 }
