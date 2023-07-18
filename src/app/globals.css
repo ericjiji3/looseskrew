@@ -20,8 +20,8 @@ body .intro-container.fade{
   transition: 750ms all ease-in;
 }
 body .intro-container .intro-video video{
-  /* width: 100vw!important;
-  height: 100vh!important; */
+  width: 100vw!important;
+  height: 100vh!important;
   object-fit: cover;
 }
 body .intro-container.fade.none{
@@ -44,8 +44,8 @@ body .bg-video{
   Z-index: -1;
 }
 body .bg-video video{
-  width: 100vw!important;
-  height: 100vh!important;
+  /* width: 100vw!important;
+  height: 100vh!important; */
   object-fit: cover;
 }
 

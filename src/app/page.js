@@ -31,14 +31,7 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     <ReactPlayer
-      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
-      width={700}
-      height={400}
-      controls={true}
-      className={styles.videoContainer}
-      
-     />
+     {video}
     </main>
   )
 }
