@@ -31,7 +31,9 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     {video}
+     <video className={styles.videoContainer} src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" width="700" height="400" controls>
+      <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
+     </video>
     </main>
   )
 }
