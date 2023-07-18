@@ -22,10 +22,10 @@ export default function Header(){
                 <Link href="/shop" className={`nav-item ${sectar.className}`}>SHOP</Link>
             </div>
             <div className="social-container">
-                <a href="https://www.instagram.com/heirdash/?hl=en" target="_blank"><Image src={Ig}/></a>
-                <a href="https://www.youtube.com/channel/UCFfqTS99AnOesxPFkD8UXyQ" target="_blank"><Image src={Youtube}/></a>
-                <a href="https://open.spotify.com/artist/6xFrZbce9KH5APjBe4QVNa" target="_blank"><Image src={Spotify}/></a>
-                <a href="https://music.apple.com/us/artist/da%24h/431164645" target="_blank"><Image src={Apple}/></a>
+                <a href="https://www.instagram.com/heirdash/?hl=en" target="_blank" ><Image src={Ig} alt="oops"/></a>
+                <a href="https://www.youtube.com/channel/UCFfqTS99AnOesxPFkD8UXyQ" target="_blank"><Image src={Youtube} alt="oops"/></a>
+                <a href="https://open.spotify.com/artist/6xFrZbce9KH5APjBe4QVNa" target="_blank"><Image src={Spotify} alt="oops"/></a>
+                <a href="https://music.apple.com/us/artist/da%24h/431164645" target="_blank"><Image src={Apple} alt="oops"/></a>
             </div>
         </div>
         
