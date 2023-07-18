@@ -1,46 +1,65 @@
 .footer-container{
     position: fixed;
-    bottom: 15%;
+    bottom: 0;
     left: 0;
-    width: auto;
-    background-color: #ffffff;
+    width: 100%;
+    background-color: #000000;
     color: #000000;
-    padding: 15px 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer-container.success{
-    transform: translateX(-100%);
+    transform: translateY(100%);
     transition: all 0.75s ease-in;
     transition-delay: 0.25s;
 }
 .footer-container label{
     display: block;
     margin: 5px 0;
+    font-size: 15px;
+    color: #ffffff;
 }
 .footer-container .input-button{
-    display: block;
+    display: flex;
     margin: 5px 0;
+    
 }
 .footer-container .input-button input{
     display: block;
-    margin: 10px 0;
+    text-align: center;
+    margin: 5px;
     font-size: 15px;
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid black;
-    background-color: #ffffff;
-
+    border-bottom: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
 .footer-container .input-button input:focus{
     outline: none;
 }
 .footer-container .input-button .button-container{
     display: block;
-    margin: 0;
+    margin: 0 auto;
     font-size: 15px;
     border: 2px solid black;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px 5px;
-    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    width: auto;
+}
+.footer-container .input-button .button-container:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
+}
+@media(max-width: 500px){
+    .footer-container .input-button input{
+        font-size: 10px;
+    }
+    .footer-container .input-button .button-container{
+        font-size: 10px;
+    }
 }

@@ -17,7 +17,25 @@
     justify-content: center;
 }
 .header .nav-container a{
-    margin: 0 25px 25px;
+    margin: 0 25px;
     text-decoration: none;
     color: #ffffff;
+    padding: 5px;
+}
+.header .nav-container a:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
+}
+.header .social-container{
+    margin-top: 10px;
+}
+.header .social-container a{
+    margin: 0 5px;
+}
+.header .social-container a:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
+}
+@media(max-width: 500px){
+    .header .nav-container a{
+        margin: 0 10px;
+    }
 }

@@ -7,6 +7,9 @@ body {
   position: relative;
   color: #ffffff;
 }
+body main{
+  margin: 0 0 150px 0 !important;
+}
 body .intro-container{
   opacity: 1;
   position: fixed;
@@ -14,7 +17,7 @@ body .intro-container{
 }
 body .intro-container.fade{
   opacity: 0;
-  transition: 1400ms all ease-in;
+  transition: 700ms all ease-in;
 }
 body .intro-container .intro-video video{
   width: 100vw!important;
@@ -25,8 +28,8 @@ body .intro-container.fade.none{
   display: none;
 }
 body .fadeIn{
-  opacity: 0;
-  animation: 1.5s fadingIn ease-in forwards;
+  opacity: 0.2;
+  animation: .75s fadingIn ease-in forwards;
   margin-bottom: 15px;
 }
 body .fadeIn .bg-video::before{
@@ -50,7 +53,7 @@ body .bg-video video{
 
 @keyframes fadingIn{
   0%{
-    opacity: 0;
+    opacity: 0.2;
   }
   100%{
     opacity: 1;

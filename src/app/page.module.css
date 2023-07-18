@@ -9,6 +9,7 @@
 }
 .homeContainer .albumContainer img{
   margin: 0 25px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6), 0 0px 26px rgba(255,255,255,255.14);
 }
 .homeContainer .videoContainer{
   margin: 50px auto 25px;

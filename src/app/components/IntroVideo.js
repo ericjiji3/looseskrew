@@ -2,7 +2,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {useState, useEffect} from 'react';
-import Video from './Video.js';
 
 export default function IntroVideo({finishVid}){
     const [video, setVideo] =useState(null);
@@ -12,7 +11,7 @@ export default function IntroVideo({finishVid}){
   useEffect(()=>{
     setVideo(<ReactPlayer
       className="intro-video"
-      url="https://d1sxqb6wcb4nin.cloudfront.net/introVidCut.mp4"
+      url="https://d1sxqb6wcb4nin.cloudfront.net/introVidCutMorer.mp4"
       muted={true}
       controls={false}
       playing={true}
@@ -23,11 +22,11 @@ export default function IntroVideo({finishVid}){
     const fadeOut = setTimeout(()=>{
         finishVid()
         setFadeVid(true)
-    }, 5500);
+    }, 1500);
     const hide = setTimeout(()=>{
         finishVid()
         setNoVid(true)
-    }, 5900);
+    }, 1900);
     return ()=>{
         clearTimeout(fadeOut, hide)
     }

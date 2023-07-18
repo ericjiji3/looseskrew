@@ -42,7 +42,7 @@ export default function Footer(){
     }
     return (
         <div className={`footer-container ${helpMe.className} ${success ? 'success' : ''}`}>
-                <label htmlFor="email">KEEP UP WITH DA$H</label>
+                <label htmlFor="email">KEEP UP WITH DA$H:</label>
                 <div className="input-button">
                     <input type="text" id="email" name="email" placeholder="example@domain.com" value={email} onChange={handleChange}></input>
                     <button className={`button-container ${helpMe.className}`} onClick={addEmail}>{errMessage}</button>

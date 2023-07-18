@@ -8,8 +8,15 @@
     margin: 50px 25px;
     box-shadow: rgba(245, 245, 245, 0.19) 10px 10px 5px;
 }
+.videosContainer .videoContainer:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
+}
+
 .videosContainer .youtubeVideo{
     position: relative;
+}
+.videosContainer .videoContainer .youtubeVideo iframe:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
 }
 .videosContainer .fallbackVideo{
     position: relative;

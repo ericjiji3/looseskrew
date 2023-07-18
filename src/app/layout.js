@@ -31,14 +31,16 @@ export default function RootLayout({ children }) {
       <body>
         {/* <video className="bg-video" src={require('https://d1sxqb6wcb4nin.cloudfront.net/bg-video.mp4')} type='video/mp4' autoPlay={true} loop={true} playsInline muted width="100%"/> */}
         
-
+        {isLoading && isHome ? (
+          <IntroVideo finishVid={() => {setLoading(false)}}/>
+        ) : (
           <div className="fadeIn">
             <BgVideo/>
             <Header/>
             {children}
             <Footer/>
           </div>
-
+        )}
         
       </body>
     </html>

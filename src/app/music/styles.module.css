@@ -10,6 +10,9 @@
     display: flex;
     flex-direction: column;
 }
+.albumsContainer .albumContainer .albumLink:hover{
+    cursor:url('../../../public/icons/hover-cursor.png'), auto;
+}
 .albumsContainer .albumContainer .albumLink img{
     border: 1px solid #ffffff;
 }
