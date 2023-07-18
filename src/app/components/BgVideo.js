@@ -15,7 +15,8 @@ export default function BgVideo(){
       controls={false}
       playing={true}
       playsinline={true}
-
+      width='100vw'
+      height='100vh'
     />);
     
   }, [])
