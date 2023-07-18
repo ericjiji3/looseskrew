@@ -35,6 +35,17 @@ export default function Home() {
      <video className={styles.videoContainer} width="700" height="400" controls>
       <source src={"/videos/skrewface-commerical.mp4"} type="video/mp4"/>
      </video>
+     <CldVideoPlayer
+        id="skrewface-commerical_imocfy"
+        width="1920"
+        height="1080"
+        src="looseskrew/skrewface-commerical_imocfy"
+        colors={{
+          accent: '#ff0000',
+          base: '#00ff00',
+          text: '#0000ff'
+        }}
+      />
     </main>
   )
 }
