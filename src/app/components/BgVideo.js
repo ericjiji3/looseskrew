@@ -10,6 +10,7 @@ export default function BgVideo(){
       className="bg-video"
       url="https://d1sxqb6wcb4nin.cloudfront.net/bg-video.mp4"
       loop={true}
+      volume={0}
       muted={true}
       controls={false}
       playing={true}
