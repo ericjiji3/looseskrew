@@ -15,8 +15,8 @@ export default function Home() {
     setVideo(
     <ReactPlayer
       url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
-      width={700}
-      height={400}
+      width='700px'
+      height='400px'
       controls={true}
       className={styles.videoContainer}
       
@@ -31,7 +31,7 @@ export default function Home() {
         <Image src={BackAlbum} width={300} height={300} alt="oops"/>
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
-     {/* {video} */}
+     {video}
      <video width="700" height="400" className={styles.videoContainer} controls>
       <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
       Your browser does not support the video tag.
