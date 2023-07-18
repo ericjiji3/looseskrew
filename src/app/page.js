@@ -33,13 +33,8 @@ export default function Home() {
         <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
      </div>
      <video className={styles.videoContainer} width="700" height="400" controls>
-      <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
+      <source src={"/videos/skrewface-commerical.mp4"} type="video/mp4"/>
      </video>
-     <CldVideoPlayer
-      width="700"
-      height="400"
-      src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
-      />
     </main>
   )
 }
