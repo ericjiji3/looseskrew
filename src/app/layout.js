@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
           <IntroVideo finishVid={() => {setLoading(false)}}/>
         ) : (
           <div className="fadeIn">
-            <BgVideo/>
             <Header/>
             {children}
             <Footer/>

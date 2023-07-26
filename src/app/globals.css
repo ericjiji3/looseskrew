@@ -31,23 +31,17 @@ body .fadeIn{
   opacity: 0.2;
   animation: .75s fadingIn ease-in forwards;
   margin-bottom: 15px;
+  background: no-repeat center url(../../public/videos/bg-videogif.gif);
+  background-size: cover;
 }
-body .fadeIn .bg-video::before{
+/* body .fadeIn .bg-video::before{
   content: '';
   background-color: rgb(14 14 14 / 75%);
   position: absolute;
   width: 100vw;
   height: 100vh;
-}
-body .bg-video{
-  position: fixed;
-  Z-index: -1;
-}
-body .bg-video video{
-  /* width: 100vw!important;
-  height: 100vh!important; */
-  object-fit: cover;
-}
+} */
+
 
 
 
