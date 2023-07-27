@@ -36,6 +36,7 @@ export default function Home() {
      <video className={styles.videoContainer} width="700" height="400" controls>
       <source src={"/videos/skrewface-commerical.mp4"} type="video/mp4"/>
      </video>
+     <ReactPlayer url='https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4' controls={true} className={styles.videoContainer} width={700} height={400}/>
     </main>
   )
 }
