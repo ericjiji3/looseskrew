@@ -12,7 +12,12 @@ const sectar = localFont({src: './fonts/Sectar.otf'})
 export default function Home() {
   const [front, setFront] = useState(false);
   const [back, setBack] = useState(false);
+  const [video, setVideo] =useState(null);
 
+  useEffect(()=>{
+    setVideo(<ReactPlayer
+      url='https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4' controls={true} className={styles.videoContainer} width={700} height={400}
+    />)});
   const handleFront = (e) =>{
     setFront(!front);
     console.log('hi')
@@ -36,7 +41,7 @@ export default function Home() {
      <video className={styles.videoContainer} width="700" height="400" controls>
       <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
      </video>
-     <ReactPlayer url='https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4' controls={true} className={styles.videoContainer} width={700} height={400}/>
+     {video}
     </main>
   )
 }
