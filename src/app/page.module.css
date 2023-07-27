@@ -11,12 +11,20 @@
 .homeContainer .albumContainer .front, .homeContainer .albumContainer .back{
   display: block;
   position: relative;
+  transition: 0.25s all ease-in;
+  z-index: 1;
 }
-.homeContainer .albumContainer .frontActive{
-  transform: scale(2) translateY(50%) translateX(calc(50% - 200px));
+.homeContainer .albumContainer .front:hover, .homeContainer .albumContainer .back:hover{
+  cursor:url('../../public/icons/hover-cursor.png'), auto;
+}
+.homeContainer .albumContainer .frontActive, .homeContainer .albumContainer .backActive{
+  transform: scale(2);
   z-index: 3;
+  transition: 0.25s all ease-in;
 }
-
+.homeContainer .albumContainer .frontActive:hover, .homeContainer .albumContainer .backActive:hover{
+  cursor:url('../../public/icons/hover-cursor.png'), auto;
+}
 .homeContainer .albumContainer img{
   margin: 0 25px;
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6), 0 0px 26px rgba(255,255,255,255.14);
@@ -44,5 +52,11 @@
   .homeContainer .videoContainer{
     width: 350px!important;
     height: 200px!important;
+  }
+  .homeContainer .albumContainer .frontActive{
+    transform: scale(2) translate(25%, 25%);
+  }
+  .homeContainer .albumContainer .backActive{
+    transform: scale(2) translate(-25%, 25%);
   }
 }

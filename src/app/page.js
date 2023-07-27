@@ -29,7 +29,7 @@ export default function Home() {
         <div className={front ? styles.frontActive : styles.front} onClick={handleFront}>
           <Image src={BackAlbum} width={300} height={300} alt="oops" />
         </div>
-        <div className={back ? styles.frontActive : styles.front} onClick={handleBack}>
+        <div className={back ? styles.backActive : styles.back} onClick={handleBack}>
           <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
         </div>
      </div>

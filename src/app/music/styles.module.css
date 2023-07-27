@@ -15,10 +15,11 @@
 }
 .albumsContainer .albumContainer .albumLink img{
     border: 1px solid #ffffff;
+    box-shadow: rgba(245, 245, 245, 0.19) 10px 10px 5px;
 }
 .albumsContainer .albumContainer .albumLink span{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #ffffff;
 }
 .albumsContainer .albumContainer .albumLink:hover span{
