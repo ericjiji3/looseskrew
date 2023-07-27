@@ -6,7 +6,17 @@
 .homeContainer .albumContainer{
   display: flex;
   justify-content: center;
+  position: relative;
 }
+.homeContainer .albumContainer .front, .homeContainer .albumContainer .back{
+  display: block;
+  position: relative;
+}
+.homeContainer .albumContainer .frontActive{
+  transform: scale(2) translateY(50%) translateX(calc(50% - 200px));
+  z-index: 3;
+}
+
 .homeContainer .albumContainer img{
   margin: 0 25px;
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6), 0 0px 26px rgba(255,255,255,255.14);

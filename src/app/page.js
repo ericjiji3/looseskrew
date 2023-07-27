@@ -10,26 +10,28 @@ import localFont from 'next/font/local'
 
 const sectar = localFont({src: './fonts/Sectar.otf'})
 export default function Home() {
-  const [video, setVideo] = useState(null);
-  useEffect(()=>{
-    setVideo(
-    <ReactPlayer
-      url="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4"
-      width='700px'
-      height='400px'
-      controls={true}
-      className={styles.videoContainer}
-      
-     />
-    )
-  }, [])
+  const [front, setFront] = useState(false);
+  const [back, setBack] = useState(false);
+
+  const handleFront = (e) =>{
+    setFront(!front);
+    console.log('hi')
+  }
+  const handleBack = (e) =>{
+    setBack(!back);
+    console.log('hi')
+  }
 
   return (
     <main className={styles.homeContainer}>
       <h2 className={`${sectar.className}`}>ALBUM OUT NOW</h2>
      <div className={styles.albumContainer}>
-        <Image src={BackAlbum} width={300} height={300} alt="oops"/>
-        <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
+        <div className={front ? styles.frontActive : styles.front} onClick={handleFront}>
+          <Image src={BackAlbum} width={300} height={300} alt="oops" />
+        </div>
+        <div className={back ? styles.frontActive : styles.front} onClick={handleBack}>
+          <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
+        </div>
      </div>
      <video className={styles.videoContainer} width="700" height="400" controls>
       <source src={"/videos/skrewface-commerical.mp4"} type="video/mp4"/>

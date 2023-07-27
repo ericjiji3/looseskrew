@@ -38,8 +38,8 @@
     }
     .videosContainer .videoContainer .youtubeVideo{
         position: relative;
-        width: 400px!important;
-        height: 300px!important;
+        width: 350px!important;
+        height: 250px!important;
     }
     .videosContainer .videoContainer .youtubeVideo iframe{
         position: absolute;
@@ -54,7 +54,7 @@
         left: 10px;
     }
     .videosContainer .fallbackVideo .thumbnail{
-        width: 400px!important;
-        height: 300px!important;
+        width: 350px!important;
+        height: 250px!important;
     }
 }

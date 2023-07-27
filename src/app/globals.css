@@ -30,9 +30,23 @@ body .intro-container.fade.none{
 body .fadeIn{
   opacity: 0.2;
   animation: .75s fadingIn ease-in forwards;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
+  position: relative;
+}
+body .fadeIn .bgVid{
   background: no-repeat center url(../../public/videos/bg-videogif.gif);
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+body .fadeIn .bgVid::before{
+  content: '';
+  background-color: rgb(14 14 14 / 75%);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 /* body .fadeIn .bg-video::before{
   content: '';
