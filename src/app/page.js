@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(()=>{
     setVideo(<ReactPlayer
       url='https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4' controls={true} className={styles.videoContainer} width={700} height={400}
-    />)});
+    />)}, []);
   const handleFront = (e) =>{
     setFront(!front);
     console.log('hi')
@@ -38,9 +38,7 @@ export default function Home() {
           <Image src={FrontAlbum} width={300} height={300} alt="oops"/>
         </div>
      </div>
-     <video className={styles.videoContainer} width="700" height="400" controls>
-      <source src="https://d1sxqb6wcb4nin.cloudfront.net/skrewface-commerical.mp4" type="video/mp4"/>
-     </video>
+
      {video}
     </main>
   )
